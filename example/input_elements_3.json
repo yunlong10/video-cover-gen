@@ -1,0 +1,9 @@
+{
+    "video_path": "example/demo_videos/cook.mp4",
+    "background_query": "厨王争霸: 我故意保留了一部分大肠的味道",
+    "sentences": [
+        ["厨王争霸", 120],
+        ["我故意保留了一部分", 120],
+        ["大肠的味道", 120]
+    ]
+}

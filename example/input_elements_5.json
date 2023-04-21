@@ -1,0 +1,8 @@
+{
+    "video_path": "example/demo_videos/road.mp4",
+    "background_query": "日本のMVの事故多発地です",
+    "sentences": [
+        ["日本のMVの", 120],
+        ["事故多発地です", 120]
+    ]
+}
