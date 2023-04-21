@@ -81,7 +81,7 @@ def get_text_region(layouts_map, bbox_size, top_n = 1):
         s = h * w
 #         alpha = 1 / (s * mean + 0.0000001)
         mean_sals[i] = layouts_map[bbox[1]:bbox[3], bbox[0]: bbox[2]].mean()
-
+    
     bboxes_ids = nms(boxes = torch.tensor(cand_text_bbox, dtype = torch.float64).clone().detach(), 
                      scores = torch.tensor(mean_sals).clone().detach(), iou_threshold = iou_threshold)
 
