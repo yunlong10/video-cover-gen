@@ -1,4 +1,4 @@
-# Language-Guided Video Cover Generation with Segment Anything
+# Language-Guided Video Cover Generation
 
 video cover generation: 
 
