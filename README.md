@@ -1,4 +1,4 @@
-# Language-Guided Video Cover Generation
+# Video Cover Generation
 
 video cover generation: 
 
