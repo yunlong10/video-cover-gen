@@ -71,11 +71,10 @@ def get_text_region(layouts_map, bbox_size, top_n = 1):
     text_width, text_height = bbox_size[0], bbox_size[1]
     height, width = layouts_map.shape[0], layouts_map.shape[1]
     cand_text_bbox = np.array([[i, j, i + text_width, j + text_height] 
-                               for i in range(width - text_width)
-                               for j in range(height - text_height)])
+                               for i in range(abs(width - text_width))
+                               for j in range(abs(height - text_height))])
     mean_sals = np.zeros(shape = (len(cand_text_bbox), ))
     mean = layouts_map.mean()
-
     for i, bbox in enumerate(cand_text_bbox):
         h, w = bbox[3] - bbox[1], bbox[2] - bbox[0]
         s = h * w

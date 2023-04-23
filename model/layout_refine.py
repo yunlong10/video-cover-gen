@@ -38,7 +38,6 @@ def get_bbox_mask(bbox, data_len):
     return mask
 
 
-# 
 def get_batch_text_region(distrib_mask, bbox_size_list, img_size):
     temp_mask = distrib_mask.copy().astype(np.float64)
     bbox_pos = np.zeros((1, MAX_BBOX_NUM, 4))

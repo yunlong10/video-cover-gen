@@ -4,7 +4,17 @@ import os
 import requests
 import jsonlines
 import numpy as np
+import cv2
+import random
 from .color_selection import color_rotation
+
+def get_unused_grays(hist, vertical_thresh=0.0001):  
+    max_value = np.max(hist)  
+  
+    thresh = max_value * vertical_thresh  
+    unused_grays = np.where(hist <= thresh)[0]  
+  
+    return unused_grays
 
 class PutText2Image(object):
     def __init__(self, ttf):
@@ -45,6 +55,7 @@ class PutText2Image(object):
         bbox_size = self.get_text_bbox_size(text, text_size)
         left = pos[0] - bbox_size[0] // 2
         up = pos[1] - bbox_size[1] // 2
+        
         return self.draw_text(image, (left, up), text, text_size, text_color)
     
     def draw_text(self, image, pos, text, text_size, text_color):
@@ -73,7 +84,7 @@ class PutText2Image(object):
           :param y_pos: text y-postion on img
           :param text: text (unicode)
           :param color: text color
-          :return:  image
+          :return: image
           '''
         prev_char = 0
         pen = freetype.Vector()
@@ -135,16 +146,6 @@ class PutText2Image(object):
         h, w = bk_region.shape[0], bk_region.shape[1]
         text_mask = text_mask[:h, :w]
         
-#         r = np.mean(img[y_pos: y_pos + h,x_pos: x_pos + w,0])
-#         g = np.mean(img[y_pos: y_pos + h,x_pos: x_pos + w,1])
-#         b = np.mean(img[y_pos: y_pos + h,x_pos: x_pos + w,2])
-        
-#         r = 255 if np.isnan(r) else int(r)
-#         g = 255 if np.isnan(g) else int(g)
-#         b = 255 if np.isnan(b) else int(b)
-        
-#         back_color = np.array((r, g, b))
-#         new_color = color_rotation(back_color).astype(np.uint8)
         fusion_region = np.where(text_mask !=0, color, bk_region)
 #         fusion_region = bk_region * (~text_mask) + text_mask * color
         img[y_pos: y_pos + h, x_pos: x_pos + w] = fusion_region
