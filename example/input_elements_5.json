@@ -1,8 +1,9 @@
 {
-    "video_path": "example/demo_videos/road.mp4",
-    "background_query": "日本のMVの事故多発地です",
+    "video_path": "example/demo_videos/shop.mp4",
+    "background_query": "刘华强买瓜，贵不贵无所谓，关键是要保熟",
     "sentences": [
-        ["日本のMVの", 120],
-        ["事故多発地です", 120]
+        "刘华强买瓜",
+        "贵不贵无所谓",
+        "关键是要保熟"
     ]
 }

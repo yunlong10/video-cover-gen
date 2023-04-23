@@ -2,8 +2,8 @@
     "video_path": "example/demo_videos/math.mp4",
     "background_query": "It's me or the PS5? Robin Gan: DO MATH, PALY PS5!",
     "sentences": [
-        ["It's me or the PS5?", 120],
-        ["Robin Gan: DO MATH", 120],
-        ["PALY PS5!", 120]
+        "It's me or the PS5?",
+        "Robin Gan: DO MATH",
+        "PALY PS5!"
     ]
 }
