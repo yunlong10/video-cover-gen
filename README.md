@@ -10,14 +10,22 @@ This is my undergraduate thesis project.
 
 video cover generation
 
-input: a video and its heading (text)
+**input**: a video and its heading (text)
 
-output: video covers (images)
+**output**: video covers (images)
+
+#### Quick Start
+
+You could see the [demo](./demo.ipynb) and use your own data to generate video covers.
 
 ### Language-Guided Video Cover Synthesis with SAM
-||||
-|--|--|--|
-|<img src="misc/cover_8.png" />|<img src="misc/cover_7.png" />|<img src="misc/cover_5.png" />|"
+
+#### Demo
+|id|video|heading|video cover|
+|--|--|--|--|
+|1|<video src="example/demo_video/jump.mp4"></video><div align="center">jump.mp4</div>|练习时长两年半的中国NBA形象大使教你打篮球|<img src="misc/cover_8.png" />|
+|3|<video src="example/demo_video/cook.mp4"></video><div align="center">cook.mp4</div>|厨王争霸: 我故意保留了一部分大肠的味道|<img src="misc/cover_5.png" />|
+
 
 
 
