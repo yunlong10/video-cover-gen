@@ -8,11 +8,11 @@ This is my undergraduate thesis project.
 
 #### Definition
 
-video cover generation
+Generate video covers given video and heading.
 
-**input**: a video and its heading (text)
+- **input**: a video and its heading (text)
 
-**output**: video covers (images)
+- **output**: video covers (images)
 
 #### Demo
 
@@ -26,6 +26,27 @@ video cover generation
 
 #### Evaluation
 
+FID is used to evaluate the results.
+
+The data can be found in [./real_data](./real_data).
+
+Comparison:
+
+|FID|1|2|3|4|5|Avg|
+|--|--|--|--|--|--|--|
+|Random|429.75|441.90|393.83|409.67|467.78|428.59|
+|First|455.37|491.33|465.60|511.42|580.75|500.89|
+|LVCG|336.51|378.32|329.80|412.37|349.96|**361.39**|
+
+Ablation:
+
+|FID|1|2|3|4|5|Avg|
+|--|--|--|--|--|--|--|
+|**LVCG**|336.51|378.32|329.80|412.37|349.96|**361.39**|
+|w/o emoji + bg|383.38|334.85|359.17|372.02|358.69|361.62|
+|w/o emoji + w/o bg|468.93|386.67|428.22|386.47|384.54|410.97|
+|emoji + w/o bg|445.52|388.78|399.64|367.96|454.24|411.23|
+|w/o text layout|450.38|409.58|423.88|387.40|415.42|417.33|
 
 
 #### Quick Start
@@ -36,7 +57,7 @@ video cover generation
 
 ### Language-Guided Video Cover Synthesis with SAM
 
-Incoming...
+Coming soooooooooooooooooon...
 
 #### Demo
 
@@ -46,7 +67,9 @@ Incoming...
 |3|<img src="misc/first/cook.png" width="300" /><div align="center">[cook.mp4](./example/demo_videos/cook.mp4)</div>|厨王争霸: 我故意保留了一部分大肠的味道|<img src="misc/cover/cook_sam.png" width="300" />|
 
 
+#### Dataset
 
+Coming soooooooooooooooooon...
 
 ## Acknowledgements
 The projects are based on [Segment Anything](https://github.com/facebookresearch/segment-anything), [Text2Poster](https://github.com/chuhaojin/text2poster-icassp-22), [ChatGPT](https://openai.com/blog/chatgpt).
