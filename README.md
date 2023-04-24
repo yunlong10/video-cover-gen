@@ -1,14 +1,18 @@
 # Video Cover Generation
 
-video cover generation: 
+
+
+### Language-Guided Video Cover Generation with BSHM
+
+This is my undergraduate thesis project.
+
+#### Definition
+
+video cover generation
 
 input: a video and its heading (text)
 
 output: video covers (images)
-
-### Language-Guided Video Cover Generation with BSHM
-
-
 
 ### Language-Guided Video Cover Synthesis with SAM
 ||||
