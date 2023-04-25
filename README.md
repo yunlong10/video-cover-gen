@@ -2,11 +2,11 @@
 
 
 
-### Language-Guided Video Cover Generation with BSHM
+## Language-Guided Video Cover Generation with BSHM
 
 This is my undergraduate thesis project.
 
-#### Definition
+### Definition
 
 Generate video covers given video and heading.
 
@@ -14,7 +14,7 @@ Generate video covers given video and heading.
 
 - **output**: video covers (images)
 
-#### Demo
+### Demo
 
 |id|video|heading|video cover|
 |--|--|--|--|
@@ -24,11 +24,15 @@ Generate video covers given video and heading.
 |4|<img src="misc/first/idol.png" width="300" /><div align="center">[idol.mp4](./example/demo_videos/idol.mp4)</div>|【推しの子】ノンクレジットオープニング｜YOASOBI「アイドル」|<img src="misc/cover/idol_bshm.png" width="300" />|
 |5|<img src="misc/first/shop.png" width="300" /><div align="center">[shop.mp4](./example/demo_videos/shop.mp4)</div>|刘华强买瓜，贵不贵无所谓，关键是要保熟|<img src="misc/cover/shop_bshm.png" width="300" />|
 
-#### Evaluation
+### Model
+
+<img src="misc/framework.png" /> 
+
+### Evaluation
 
 FID is used to evaluate the results.
 
-The data can be found in [./real_data](./real_data).
+The eval data can be found in [./real_data](./real_data).
 
 Comparison:
 
@@ -49,17 +53,17 @@ Ablation:
 |w/o text layout|450.38|409.58|423.88|387.40|415.42|417.33|
 
 
-#### Quick Start
+### Quick Start
 
 1. Clone this repo.
 
 2. You could see the [demo](./demo.ipynb) and use your own data to generate video covers.
 
-### Language-Guided Video Cover Synthesis with SAM
+## Language-Guided Video Cover Synthesis with SAM
 
 Coming soooooooooooooooooon...
 
-#### Demo
+### Demo
 
 |id|video|heading|video cover|
 |--|--|--|--|
@@ -72,4 +76,4 @@ Coming soooooooooooooooooon...
 Coming soooooooooooooooooon...
 
 ## Acknowledgements
-The projects are based on [Segment Anything](https://github.com/facebookresearch/segment-anything), [Text2Poster](https://github.com/chuhaojin/text2poster-icassp-22), [ChatGPT](https://openai.com/blog/chatgpt).
+The projects are based on [Text2Poster](https://github.com/chuhaojin/text2poster-icassp-22), [Segment Anything](https://github.com/facebookresearch/segment-anything),  [ChatGPT](https://openai.com/blog/chatgpt).
