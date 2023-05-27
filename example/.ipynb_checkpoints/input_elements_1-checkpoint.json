@@ -1,9 +1,0 @@
-{
-    "video_path": "example/demo_videos/jump.mp4",
-    "background_query": "练习时长两年半的中国NBA形象大使教你打篮球",
-    "sentences": [
-        "练习时长两年半",
-        "中国NBA形象大使",
-        "教你打篮球"
-    ]
-}

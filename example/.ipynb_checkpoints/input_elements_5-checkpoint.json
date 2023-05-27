@@ -1,9 +1,0 @@
-{
-    "video_path": "example/demo_videos/shop.mp4",
-    "background_query": "刘华强买瓜，贵不贵无所谓，关键是要保熟",
-    "sentences": [
-        "刘华强买瓜",
-        "贵不贵无所谓",
-        "关键是要保熟"
-    ]
-}
